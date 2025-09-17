@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="Devop.css">
+</head>
+<body>
+  <div class="container" id="quiz-container">
+    <div class="start-screen" id="start-screen">
+      <h1>Welcome to the Quiz Game</h1>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="question-screen hidden" id="question-screen">
+      <div class="question-header">
+        <div id="question-number"></div>
+        <div id="question-text"></div>
+      </div>
+      <div class="options" id="options-container">
+        <!-- buttons for options will be added here dynamically -->
+      </div>
+      <div class="nav-buttons">
+        <button id="prev-btn" class="nav-btn">Previous</button>
+        <button id="next-btn" class="nav-btn">Next</button>
+      </div>
+    </div>
+
+    <div class="result-screen hidden" id="result-screen">
+      <h2>Quiz Over!</h2>
+      <p>Your Score: <span id="score"></span> / <span id="total-questions"></span></p>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="Devop.js"></script>
+</body>
+</html>
